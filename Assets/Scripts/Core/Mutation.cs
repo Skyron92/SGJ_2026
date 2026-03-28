@@ -14,8 +14,8 @@ namespace Core
         public List<Effect> effects;
 
         private int MaxHeat => Mathf.Clamp(effects.Sum(effect => effect.MaxHeat), AbsoluteMinHeat, AbsoluteMaxHeat);
-        private int MaxPh => Mathf.Clamp(effects.Sum(effect => effect.MaxPh),MinPh + 1,AbsoluteMaxPh);
-        private int MinPh => Mathf.Clamp(effects.Sum(effect => -effect.MinPh),AbsoluteMinPh,MaxPh-1);
+        private int MaxPh => Mathf.Clamp(effects.Sum(effect => effect.MaxPh),AbsoluteMinPh,AbsoluteMaxPh);
+        private int MinPh => Mathf.Clamp(effects.Sum(effect => -effect.MinPh),AbsoluteMinPh,AbsoluteMaxPh);
         private int SupportUV => (int)Mathf.Sign(effects.Sum(effect => effect.SupportUv));
         private int SupportPulsed => (int)Mathf.Sign(effects.Sum(effect => effect.SupportPulsed));
         
