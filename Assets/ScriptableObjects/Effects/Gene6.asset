@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6efc6f1611d140a7b409378bbb00c911, type: 3}
-  m_Name: Effect
+  m_Name: Gene6
   m_EditorClassIdentifier: Assembly-CSharp::Effect
-  MaxHeat: 100
-  SupportUv: 1
-  SupportPulsed: 0
-  MaxPh: 5
-  MinPh: 4
+  MaxHeat: 30
+  SupportUv: -1
+  SupportPulsed: -2
+  MaxPh: 4
+  MinPh: -1
