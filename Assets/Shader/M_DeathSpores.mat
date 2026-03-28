@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Spores
-  m_Shader: {fileID: -6465566751694194690, guid: 930d17f7997ec5d4a970f7445394d3fe, type: 3}
+  m_Name: M_DeathSpores
+  m_Shader: {fileID: -6465566751694194690, guid: 6ad7363be15070d46baf9eb30d946f7e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -18,16 +18,11 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses:
-  - MOTIONVECTORS
+  disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MaintTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -42,24 +37,20 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _QueueControl: 0
-    - _QueueOffset: 0
-    - _Radius: 0.2
-    - _Seed: 20.7
-    - _Speed: 1.11
-    - _noise_scale: 500
+    - _Radius: 1
+    - _Speed: 1
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
-    - _BackgroundColor: {r: 0.19250798, g: 0.29799998, b: 0.27748764, a: 1}
-    - _Seed1: {r: 18.2, g: 6.47, b: 0, a: 0}
-    - _Seed2: {r: 9.34, g: 21.5, b: 0, a: 0}
-    - _Seed3: {r: 5.76, g: 4.97, b: 0, a: 0}
-    - _Seed4: {r: -6.42, g: 8.08, b: 0, a: 0}
-    - _Seed5: {r: -2.12, g: 0.41, b: 0, a: 0}
-    - _Seed6: {r: 2.21, g: 1.54, b: 0, a: 0}
+    - _BackgroundColor: {r: 0.192, g: 0.3, b: 0.2802, a: 1}
+    - _Seed1: {r: 0, g: 0, b: 0, a: 0}
+    - _Seed2: {r: 0, g: 0, b: 0, a: 0}
+    - _Seed3: {r: 0, g: 0, b: 0, a: 0}
+    - _Seed4: {r: 0, g: 0, b: 0, a: 0}
+    - _Seed5: {r: 0, g: 0, b: 0, a: 0}
+    - _Seed6: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &8757204983101218437
+--- !u!114 &5914388526803786171
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
