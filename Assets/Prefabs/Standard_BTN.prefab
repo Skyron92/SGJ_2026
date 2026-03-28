@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab10a7dca98e0646a58e9941340291b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.UI_Scaler
-  baseScale: 1
+  inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
   hoverScale: 1.1
   pressedScale: 0.9
   scaleDuration: 0.1
