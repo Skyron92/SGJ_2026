@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87d94440dabf45f191cd7555edb94b25, type: 3}
-  m_Name: ObservationExplanations
+  m_Name: LightExplaination
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explanations
   content:
-  - "Le microscope va te permettre te regarder le pourcentage de destruction de spore,
-    les spores ne sont pas visibles \xE0 l\u2019\u0153il nu, nous avons donc besoin
-    d\u2019un outil comme le microscope pour grandir ces petits organismes, les spores
-    de BC que tu observe dans le microscope sont en r\xE9alit\xE9 1000 fois plus
-    petite dans la r\xE9alit\xE9."
+  - "Utilis\xE9 entre 220 et 1110 nm, c\u2019est lumi\xE8re blanche riche en UV qui
+    est utilis\xE9 sous forme de flash rapide. Cette lumi\xE8re va d\xE9structure
+    la spore"

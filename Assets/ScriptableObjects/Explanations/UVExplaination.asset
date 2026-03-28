@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6efc6f1611d140a7b409378bbb00c911, type: 3}
-  m_Name: Effect
-  m_EditorClassIdentifier: Assembly-CSharp::Effect
-  MaxHeat: 100
-  SupportUv: 1
-  SupportPulsed: 0
-  MaxPh: 5
-  MinPh: 4
+  m_Script: {fileID: 11500000, guid: 87d94440dabf45f191cd7555edb94b25, type: 3}
+  m_Name: UVExplaination
+  m_EditorClassIdentifier: Assembly-CSharp::UI.Explanations
+  content:
+  - "UV-254 nm = dommage sur l\u2019ADN"
