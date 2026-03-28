@@ -8,7 +8,7 @@ namespace UI
     public class Explanations : ScriptableObject
     {
         [SerializeField] private string[] content;
-        private int _index = 0;
+        private int _index;
         private int Index {
             get => _index;
             set => _index = _index >= content.Length ? 0 : value;
@@ -26,6 +26,7 @@ namespace UI
             }
             catch (IndexOutOfRangeException e)
             {
+                Reset();
                 return null;
             }
             

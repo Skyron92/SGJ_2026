@@ -19,6 +19,7 @@ namespace UI
 
         private void OnExplain(Explanations explanations)
         {
+            explanations.Reset();
             boxHelper.Open();
             boxHelper.SetText(explanations.GetNextContent());
             InputAction.started += _ =>
