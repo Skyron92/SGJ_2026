@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: DNAExplanations
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explanations
   content:
-  - Blablabla
+  - "Ce tube contient les spores bact\xE9riennes que tu va soumettre \xE0 diff\xE9rents
+    tests, tu peux vider ton tube dans la poubelle biologique et remplacer ton tube
+    \xE0 l\u2019aide la fl\xE8che (\xE0 d\xE9tailler selon commande)"
