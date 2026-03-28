@@ -266,6 +266,53 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &90408809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 90408811}
+  - component: {fileID: 90408810}
+  m_Layer: 0
+  m_Name: TutoManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &90408810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90408809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769ef14abf5a461ead0e760c5c23b5c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
+  inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
+  explanations: {fileID: 11400000, guid: 1c6c6d015fb3a3148b167cbdf12f2ce4, type: 2}
+  explainOnStart: 1
+--- !u!4 &90408811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90408809}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 708.2081, y: 544.2615, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &158638886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -500,8 +547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
-  explanations: {fileID: 11400000, guid: 1c6c6d015fb3a3148b167cbdf12f2ce4, type: 2}
-  explainOnStart: 1
+  explanations: {fileID: 11400000, guid: 37a899b12240c704f903cca9b837fda2, type: 2}
+  explainOnStart: 0
 --- !u!1 &538489054
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UI.Helper
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
   explainables:
+  - {fileID: 90408810}
   - {fileID: 535485722}
   boxHelper: {fileID: 8025820596988935362}
 --- !u!4 &1263681909
@@ -825,7 +873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7738045069181335872, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TriggerExplanations
+      value: FinishExplanations
       objectReference: {fileID: 0}
     - target: {fileID: 7738045069181335872, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1151,3 +1199,4 @@ SceneRoots:
   - {fileID: 538489058}
   - {fileID: 386995906}
   - {fileID: 1263681909}
+  - {fileID: 90408811}

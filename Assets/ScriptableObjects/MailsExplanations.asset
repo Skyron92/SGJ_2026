@@ -10,9 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87d94440dabf45f191cd7555edb94b25, type: 3}
-  m_Name: Tuto
+  m_Name: MailsExplanations
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explanations
   content:
-  - Hello !
-  - Welcome
-  - Goodbye
+  - "Pense \xE0 consulter tes mails."
