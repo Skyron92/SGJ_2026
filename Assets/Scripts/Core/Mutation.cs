@@ -19,9 +19,10 @@ public class Mutation : ScriptableObject
         
     public override string ToString()
     {
-        string result = $"{(MaxHeat != 0 ? $"Température maximale : {MaxHeat}, " : "")}{(MaxPh != null && MinPh != null ? $"PH entre {MinPh} et {MaxPh}, ":"")}" +
-                        $"{(SupportUV != 0 ? ((SupportUV > 0 ? " supporte " : " ne supporte pas ")+"les rayons UV,"):"")}"+
-                        $"{(SupportPulsed != 0 ? ((SupportPulsed > 0 ? " supporte " : " ne supporte pas ")+"la lumière pulsée."):"")}";
+        //string result = $"{(MaxHeat != 0 ? $"Température maximale : {MaxHeat}, " : "")}{(MaxPh != null && MinPh != null ? $"PH entre {MinPh} et {MaxPh}, ":"")}" +
+        //                $"{(SupportUV != 0 ? ((SupportUV > 0 ? " supporte " : " ne supporte pas ")+"les rayons UV,"):"")}"+
+        //                $"{(SupportPulsed != 0 ? ((SupportPulsed > 0 ? " supporte " : " ne supporte pas ")+"la lumière pulsée."):"")}";
+        string result = "";
         return result;
     }
 }
