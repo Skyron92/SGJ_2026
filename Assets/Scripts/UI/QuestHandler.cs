@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,7 @@ namespace UI
         public Quest currentQuest;
         
         [SerializeField] private TextMeshProUGUI title, description, goals;
+        [SerializeField] private ProgressHandler progressHandler;
         
         [Header("Feedbadck")]
         [SerializeField] private Transform buttonTransform;
@@ -62,6 +64,8 @@ namespace UI
                 return;
             }
             ThrowFeedback(true, "Félcitiation, votre mutation remplit tous les citères !");
+            progressHandler.Save(progressHandler.Load()+1);
+            currentQuest = progressHandler.GetLastQuestAvailable();
         }
 
         public void ThrowFeedback(bool success, string message)
@@ -80,11 +84,9 @@ namespace UI
         {
             buttonImage.DOColor(rightColor, rightDuration).SetEase(Ease.OutBack);
         } 
-        private void WrongFade(int count)
-        {
+        private void WrongFade(int count) {
             if(count >= wrongTwinkleIterations) return;
-            buttonImage.DOColor(wrongColor, wrongDuration).OnComplete((() => buttonImage.DOColor(Color.white, wrongDuration))).OnComplete((() =>
-            {
+            buttonImage.DOColor(wrongColor, wrongDuration).OnComplete((() => buttonImage.DOColor(Color.white, wrongDuration))).OnComplete((() => {
                 WrongFade(count+1);
             }));
         }
