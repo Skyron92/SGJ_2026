@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994ea54fd60f8724eb5b922d57068b19, type: 3}
+  m_Name: Lvl5Quest
+  m_EditorClassIdentifier: Assembly-CSharp::Quest
+  customer: Milie
+  description: "Bravo \xE0 toi\_!\n\nTu as compl\xE9t\xE9 toutes les missions que
+    je t\u2019ai demand\xE9e\_! Comme tu as pu le constater lorsque que tu as mut\xE9
+    les g\xE8nes responsables de la synth\xE8se des sucres, tu as en r\xE9alit\xE9
+    modifi\xE9 la composition en sucre des spores. Cette modification de composition
+    a eu un impact\r\nsur les propri\xE9t\xE9s des spores.\n\r\nGr\xE2ce \xE0 toi,
+    j\u2019ai maintenant les informations n\xE9cessaires pour comprendre quel(s)
+    g\xE8ne(s) et sucre(s) va impacter les diff\xE9rentes propri\xE9t\xE9s de r\xE9sistance
+    de la spore.\n\nPS : D'autres niveaux arriveront dans la version final !"
+  requestedMutation: {fileID: 11400000, guid: 1b5d40c31a26a714ca31794b8bc93e3b, type: 2}
