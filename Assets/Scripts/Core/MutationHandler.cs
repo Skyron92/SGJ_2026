@@ -19,7 +19,7 @@ public class MutationHandler : MonoBehaviour
 
     public Mutation GetCurrentMutation() => _currentMutation;
 
-    private bool SupportWarm(int warm) => _currentMutation.MaxHeat < warm;
+    public bool SupportWarm(int warm) => _currentMutation.MaxHeat < warm;
     private bool SupportPh(int ph) => _currentMutation.MaxPh > ph && _currentMutation.MinPh < ph;
     private bool SupportUv() => _currentMutation.SupportUV >= 0;
     private bool SupportPulsed() => _currentMutation.SupportPulsed >= 0;
@@ -30,5 +30,5 @@ public class MutationHandler : MonoBehaviour
         return result;
     }
 
-    private void KillMutation() => _currentMutation = null;
+    public void KillMutation() => _currentMutation = null;
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using TMPro;
+using UI;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -17,13 +18,20 @@ public class Thermos : MonoBehaviour
     private float _time;
     [Space]
     [SerializeField, Range(0,100)] private float maxTime;
+    
+    [SerializeField] private FeedbackNotification feedbackNotification;
 
     public void StartLowProgram() => StartCoroutine(StartProgram(lowTemp));
     public void StartHighProgram() => StartCoroutine(StartProgram(highTemp));
 
     private IEnumerator StartProgram(int temp)
     {
-        foreach (var btn in buttons) btn.interactable = false;
+        if (MutationHandler.Instance.GetCurrentMutation() == null) {
+            feedbackNotification.gameObject.SetActive(true);
+            feedbackNotification.Init(false, "Vous n'avez pas de mutation à tester.");
+            yield break;
+        }
+        SetAllButtonsEnabled(false);
             
         slider.gameObject.SetActive(true);
         _time = maxTime;
@@ -36,6 +44,18 @@ public class Thermos : MonoBehaviour
             counterText.text = ((int)(_time)) + "s";
             yield return null;
         }
+        
+        SetAllButtonsEnabled(true);
+        slider.gameObject.SetActive(false);
+        feedbackNotification.gameObject.SetActive(true);
+        var success = MutationHandler.Instance.SupportWarm(temp);
+        if(!success) MutationHandler.Instance.KillMutation();
+        feedbackNotification.Init(success, success ? "Votre mutation a survécu au programme !" : "Votre mutation n'a pas survécu au programme...");
         onTimerEnded?.Invoke(temp);
+    }
+
+    private void SetAllButtonsEnabled(bool state)
+    {
+        foreach (var btn in buttons) btn.interactable = state;
     }
 }

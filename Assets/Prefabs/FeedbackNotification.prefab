@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05306dc8ad7042cd88a9545e6539679b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.FeedbackNotification
-  duration: 5
+  duration: 3
   wrongColor: {r: 0.7028302, g: 0.36136082, b: 0.36136082, a: 1}
   rightColor: {r: 0.39355642, g: 0.6320754, b: 0.36970448, a: 1}
   content: {fileID: 2267059873998210114}
