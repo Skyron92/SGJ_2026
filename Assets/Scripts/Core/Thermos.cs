@@ -20,6 +20,8 @@ public class Thermos : MonoBehaviour
     [SerializeField, Range(0,100)] private float maxTime;
     
     [SerializeField] private FeedbackNotification feedbackNotification;
+    
+    public AudioSource audioSource;
 
     public void StartLowProgram() => StartCoroutine(StartProgram(lowTemp));
     public void StartHighProgram() => StartCoroutine(StartProgram(highTemp));
@@ -32,6 +34,7 @@ public class Thermos : MonoBehaviour
             yield break;
         }
         SetAllButtonsEnabled(false);
+        audioSource.Play();
             
         slider.gameObject.SetActive(true);
         _time = maxTime;
