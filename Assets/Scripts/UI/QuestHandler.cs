@@ -1,5 +1,4 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,7 +10,7 @@ namespace UI
         [Header("Quest")]
         public Quest currentQuest;
         
-        [SerializeField] private TextMeshProUGUI title, description, goals;
+        [SerializeField] private TextMeshProUGUI title, description;
         [SerializeField] private ProgressHandler progressHandler;
         
         [Header("Feedbadck")]
@@ -25,6 +24,7 @@ namespace UI
 
         private void Start()
         {
+            currentQuest= progressHandler.GetLastQuestAvailable();
             DisplayQuest();
         }
 
@@ -32,7 +32,6 @@ namespace UI
         {
             title.text = currentQuest.customer;
             description.text = currentQuest.description;
-            goals.text = currentQuest.requestedMutation.ToString();
         }
 
         public void SubmitMutation()
