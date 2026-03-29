@@ -13,5 +13,10 @@ MonoBehaviour:
   m_Name: Lvl2Quest
   m_EditorClassIdentifier: Assembly-CSharp::Core.Quest
   customer: Milie
-  description: "BRAVO ozdhouqzhduqz\n\nMtn mutant qui survie \xE0 un Ph plus"
+  description: "Bravo pour ta premi\xE8re mission r\xE9ussis!\n\nTon nouvel objectif
+    est d'identifier un mutant dont le g\xE8ne supprim\xE9 va impacter la r\xE9sistance
+    \xE0 l'acide en le rendant plus r\xE9sistant.\nEn temps normal, les spores r\xE9sistent
+    \xE0 un pH de 4, ici ton mutant doit r\xE9sister \xE0 un pH de 3.\n\nJe te conseil
+    d'utiliser l'acide H2O2 sur ta droite.\n\nPS : Encore une fois, pour r\xE9ussir
+    cette mission il faudra supprimer un seul g\xE8ne.  "
   requestedMutation: {fileID: 11400000, guid: f26d655e3f531fe40adc8fc6329b14fd, type: 2}
