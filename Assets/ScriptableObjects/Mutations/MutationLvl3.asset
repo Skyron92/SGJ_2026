@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef510c576be64c3f8375393ad2fec565, type: 3}
   m_Name: MutationLvl3
   m_EditorClassIdentifier: Assembly-CSharp::Mutation
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: 6bb982c45059f7f4bb5d1da84a5fa960, type: 2}

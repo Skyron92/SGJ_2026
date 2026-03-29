@@ -18,6 +18,6 @@ MonoBehaviour:
     chimiques en utilisant des solutions basiques.\n\nPour remplir cette mission,
     il te faudra utiliser le hypochlorite de sodium (NACLO) pour augmenter le pH
     de ta solution.\nRetiens bien que les spores sont capables de supporter un pH
-    basique de 10, augmente le pH \xE0 12 et voit si\r\nton mutant r\xE9siste.\n\nBonne
+    basique de 8, augmente le pH \xE0 10 et voit si ton mutant r\xE9siste.\n\nBonne
     chance\_!"
   requestedMutation: {fileID: 0}

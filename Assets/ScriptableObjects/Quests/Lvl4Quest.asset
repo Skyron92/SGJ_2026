@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994ea54fd60f8724eb5b922d57068b19, type: 3}
+  m_Name: Lvl4Quest
+  m_EditorClassIdentifier: Assembly-CSharp::Quest
+  customer: Milie
+  description: "Tu vas pouvoir bient\xF4t rejoindre notre \xE9quipe de chercheurs
+    avec de tels capacit\xE9s\_!\n\nVoici la derni\xE8re mission que j\u2019ai \xE0
+    te confier, j\u2019aurai besoin que tu identifies maintenant quel g\xE8ne pourrait
+    jouer un r\xF4le dans la r\xE9sistance \xE0 la lumi\xE8re UV.\n\nAfin de r\xE9pondre
+    \xE0 cette derni\xE8re requ\xEAte, \xE9quipe-toi des lumi\xE8res au fond du laboratoire.\n\nTon
+    objectif sera cette fois de\r\ncibler le maximum de spores. C\u2019est parti\_!"
+  requestedMutation: {fileID: 11400000, guid: f113c9bcee7d8be4f8c19fe59b5d5346, type: 2}
