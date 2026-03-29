@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6efc6f1611d140a7b409378bbb00c911, type: 3}
-  m_Name: EffectLvL2
-  m_EditorClassIdentifier: Assembly-CSharp::Effect
-  MaxHeat: 0
-  SupportUv: 0
-  SupportPulsed: 0
-  MaxPh: 0
-  MinPh: 3
+  m_Script: {fileID: 11500000, guid: ef510c576be64c3f8375393ad2fec565, type: 3}
+  m_Name: MutationLvl3
+  m_EditorClassIdentifier: Assembly-CSharp::Mutation
+  effects: []

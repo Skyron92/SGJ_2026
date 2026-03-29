@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6efc6f1611d140a7b409378bbb00c911, type: 3}
-  m_Name: EffectLvL2
+  m_Name: EffectLvl3
   m_EditorClassIdentifier: Assembly-CSharp::Effect
   MaxHeat: 0
   SupportUv: 0
   SupportPulsed: 0
-  MaxPh: 0
-  MinPh: 3
+  MaxPh: 5
+  MinPh: 0
