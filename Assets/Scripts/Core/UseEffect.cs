@@ -4,15 +4,13 @@ public class UseEffect : MonoBehaviour
 {
     public Effect effectValues;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public DNAModifier dnaModifier;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private bool _contained = true;
+
+    public void OnClick() {
+        if(_contained) dnaModifier.RemoveEffect(effectValues);
+        else dnaModifier.AddEffect(effectValues);
+        _contained = !_contained;
     }
 }

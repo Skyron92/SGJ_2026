@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UI
 {
-    public class UIMover : PointerSensitive
+    public class UIMoverY : PointerSensitive
     {
         [SerializeField] float closedHeight;
         [SerializeField] float openedHeight;

@@ -89,10 +89,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddb3f2d41c34de694ac1bd184a54a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.QuestHandler
-  questTemp: {fileID: 11400000, guid: 50e1abf06b5b3f94f8c3005151b35d96, type: 2}
+  currentQuest: {fileID: 11400000, guid: 50e1abf06b5b3f94f8c3005151b35d96, type: 2}
   title: {fileID: 6752890125415262525}
   description: {fileID: 3917656352035361830}
   goals: {fileID: 6496216062330298513}
+  buttonTransform: {fileID: 719103995866193194}
+  shakeIntensity: 10
+  shakeDuration: 2
+  buttonImage: {fileID: 5168726656913253210}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  rightColor: {r: 0.15112436, g: 1, b: 0, a: 1}
+  rightDuration: 1
+  wrongDuration: 0.7
+  wrongTwinkleIterations: 3
+  feedbackNotification: {fileID: 0}
 --- !u!1 &877696064868892227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1086,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 4079455941252976208, guid: 6df4d0f84dab3874899a71af0f1528e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4079455941252976208, guid: 6df4d0f84dab3874899a71af0f1528e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4079455941252976208, guid: 6df4d0f84dab3874899a71af0f1528e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6165542030790809998}
+    - target: {fileID: 4079455941252976208, guid: 6df4d0f84dab3874899a71af0f1528e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4079455941252976208, guid: 6df4d0f84dab3874899a71af0f1528e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SubmitMutation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4079455941252976208, guid: 6df4d0f84dab3874899a71af0f1528e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UI.QuestHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4079455941252976208, guid: 6df4d0f84dab3874899a71af0f1528e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6718182571571223775, guid: 6df4d0f84dab3874899a71af0f1528e7, type: 3}
       propertyPath: m_Name
       value: Standard_BTN
@@ -1171,3 +1209,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7969098784812433846, guid: 6df4d0f84dab3874899a71af0f1528e7, type: 3}
   m_PrefabInstance: {fileID: 7452657322672069788}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5168726656913253210 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2366124675760472006, guid: 6df4d0f84dab3874899a71af0f1528e7, type: 3}
+  m_PrefabInstance: {fileID: 7452657322672069788}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image

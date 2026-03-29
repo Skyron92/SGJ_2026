@@ -1,6 +1,8 @@
 ﻿using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace UI
 {
@@ -9,6 +11,8 @@ namespace UI
         private const float BaseScale = 1;
         private const float CloseScale = 0;
         [SerializeField, Range(0,1)] private float scaleDuration = .2f;
+        
+        public UnityEvent onClose;
 
         protected override void OnEnable() {
             base.OnEnable();
@@ -22,7 +26,11 @@ namespace UI
         
         public void Close()
         {
-            transform.DOScale(CloseScale,scaleDuration).SetEase(Ease.InBack).OnComplete(() => gameObject.SetActive(false));
+            transform.DOScale(CloseScale,scaleDuration).SetEase(Ease.InBack).OnComplete(() =>
+            {
+                onClose?.Invoke();
+                gameObject.SetActive(false);
+            });
         }
 
         public override void OnClick(InputAction.CallbackContext _) {

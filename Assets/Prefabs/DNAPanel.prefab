@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5424131145507401519}
   - component: {fileID: 1879661273231922072}
   - component: {fileID: 7036425932748784534}
+  - component: {fileID: 6847335844230737855}
   m_Layer: 5
   m_Name: DNAPanel
   m_TagString: Untagged
@@ -82,6 +83,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6847335844230737855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3462908487902988237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be45c6501f4a57449965d044c4278679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DNAModifier
+  effects:
+  - {fileID: 11400000, guid: 1afa2f587914882408abe14096c97f14, type: 2}
+  - {fileID: 11400000, guid: d5615361f68faec44b5fc5335aef6bfc, type: 2}
+  - {fileID: 11400000, guid: 0724487f1a66b3948a77767ae44bda39, type: 2}
+  - {fileID: 11400000, guid: e2a030155cf7d0d4897a0cfccfbda3df, type: 2}
+  - {fileID: 11400000, guid: 87bdeb801bb12d54fbb30c66ccaf6c4f, type: 2}
+  - {fileID: 11400000, guid: f27bfe29ae694ef489c245ebf6978e26, type: 2}
+  - {fileID: 11400000, guid: 9e12c9f6763bb604c8b86666ee7aec2c, type: 2}
+  onSubmit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1231459753357204132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174,6 +198,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gene7
       objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2061535218194583870}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UseEffect, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -205,6 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UseEffect
   effectValues: {fileID: 11400000, guid: 9e12c9f6763bb604c8b86666ee7aec2c, type: 2}
+  dnaModifier: {fileID: 6847335844230737855}
 --- !u!1001 &1360299291784864696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -297,6 +350,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gene2
       objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8405094784408063758}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UseEffect, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -328,6 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UseEffect
   effectValues: {fileID: 11400000, guid: d5615361f68faec44b5fc5335aef6bfc, type: 2}
+  dnaModifier: {fileID: 6847335844230737855}
 --- !u!1001 &1545420296434142759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -420,6 +502,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gene4
       objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5561866601901350476}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UseEffect, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -446,6 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UseEffect
   effectValues: {fileID: 11400000, guid: e2a030155cf7d0d4897a0cfccfbda3df, type: 2}
+  dnaModifier: {fileID: 6847335844230737855}
 --- !u!224 &1499596106887482209 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 125481921759446342, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
@@ -543,6 +654,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gene3
       objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 103604548939218612}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UseEffect, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -574,6 +713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UseEffect
   effectValues: {fileID: 11400000, guid: 0724487f1a66b3948a77767ae44bda39, type: 2}
+  dnaModifier: {fileID: 6847335844230737855}
 --- !u!1001 &3678048107452797256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -666,6 +806,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gene5
       objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6147052563996505759}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UseEffect, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -697,6 +865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UseEffect
   effectValues: {fileID: 11400000, guid: 87bdeb801bb12d54fbb30c66ccaf6c4f, type: 2}
+  dnaModifier: {fileID: 6847335844230737855}
 --- !u!1001 &4147084998452528437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -789,6 +958,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gene6
       objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7516097921696043461}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UseEffect, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -820,6 +1017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UseEffect
   effectValues: {fileID: 11400000, guid: f27bfe29ae694ef489c245ebf6978e26, type: 2}
+  dnaModifier: {fileID: 6847335844230737855}
 --- !u!1001 &5771450822294476158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -912,6 +1110,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gene1
       objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4217565863116309391}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UseEffect, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760323041675102383, guid: 690189ad0201cc84b8ed123acba436ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -943,3 +1169,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UseEffect
   effectValues: {fileID: 11400000, guid: 1afa2f587914882408abe14096c97f14, type: 2}
+  dnaModifier: {fileID: 6847335844230737855}

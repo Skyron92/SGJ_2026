@@ -1,14 +1,25 @@
-﻿using Core;
+﻿using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UI
 {
     public class QuestHandler : MonoBehaviour
     {
-        public Quest questTemp;
+        [Header("Quest")]
+        public Quest currentQuest;
         
         [SerializeField] private TextMeshProUGUI title, description, goals;
+        
+        [Header("Feedbadck")]
+        [SerializeField] private Transform buttonTransform;
+        [SerializeField,Range(0,100)] private float shakeIntensity, shakeDuration;
+        [SerializeField] private Image buttonImage;
+        [SerializeField] private Color wrongColor, rightColor;
+        [SerializeField,Range(0,2)] private float rightDuration, wrongDuration;
+        [SerializeField,Range(1,5)] private int wrongTwinkleIterations;
+        [SerializeField] private FeedbackNotification feedbackNotification;
 
         private void Start()
         {
@@ -17,13 +28,65 @@ namespace UI
 
         public void DisplayQuest()
         {
-            title.text = questTemp.customer;
-            description.text = questTemp.description;
-            goals.text = questTemp.requestedMutation.ToString();
+            title.text = currentQuest.customer;
+            description.text = currentQuest.description;
+            goals.text = currentQuest.requestedMutation.ToString();
         }
 
-        public void SubmitMutation(Mutation mutation)
+        public void SubmitMutation()
         {
+            var mutation = MutationHandler.Instance.GetCurrentMutation();
+            if (!mutation) {
+                ThrowFeedback(false, "Tu dois d'abord créer une mutation.");
+                return;
+            }
+            var requestedEffect = currentQuest.requestedMutation.effects[0];
+            if(requestedEffect.MaxHeat != 0 && requestedEffect.MaxHeat > mutation.MaxHeat) {
+                ThrowFeedback(false, "Votre mutation ne résiste pas à la chaleur demandée.");
+                return;
+            }
+            if (requestedEffect.MaxPh != 0 && requestedEffect.MaxPh > mutation.MaxPh) {
+                ThrowFeedback(false, "Votre mutation ne résiste pas au Ph demandé.");
+                return;
+            }
+            if (requestedEffect.MinPh != 0 && requestedEffect.MinPh > mutation.MinPh) {
+                ThrowFeedback(false, "Votre mutation ne résiste pas au Ph demandé.");
+                return;
+            }
+            if (requestedEffect.SupportPulsed != 0 && requestedEffect.SupportPulsed != mutation.SupportPulsed) {
+                ThrowFeedback(false, "Votre mutation n'a pas la résistance attendue face à la lumière pulsée.");
+                return;
+            }
+            if (requestedEffect.SupportPulsed != 0 && requestedEffect.SupportUv != mutation.SupportUV) {
+                ThrowFeedback(false, "Votre mutation n'a pas la résistance attendue face aux rayons UV.");
+                return;
+            }
+            ThrowFeedback(true, "Félcitiation, votre mutation remplit tous les citères !");
+        }
+
+        public void ThrowFeedback(bool success, string message)
+        {
+            if (!success) {
+                WrongFade(0);
+                buttonTransform.DOShakePosition(shakeDuration, shakeIntensity);
+            }
+            else RightFade();
+
+            feedbackNotification.gameObject.SetActive(true);
+            feedbackNotification.Init(success, message);
+        }
+
+        private void RightFade()
+        {
+            buttonImage.DOColor(rightColor, rightDuration).SetEase(Ease.OutBack);
+        } 
+        private void WrongFade(int count)
+        {
+            if(count >= wrongTwinkleIterations) return;
+            buttonImage.DOColor(wrongColor, wrongDuration).OnComplete((() => buttonImage.DOColor(Color.white, wrongDuration))).OnComplete((() =>
+            {
+                WrongFade(count+1);
+            }));
         }
     }
 }
