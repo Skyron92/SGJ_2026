@@ -10,18 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 994ea54fd60f8724eb5b922d57068b19, type: 3}
-  m_Name: FirstQuest
+  m_Name: Lvl2Quest
   m_EditorClassIdentifier: Assembly-CSharp::Core.Quest
-  customer: Test & co.
-  description: 'Blablabla. BloubiBloup.
-
-
-    We wanna the firstMutation.
-
-
-    Please
-    hurry up.
-
-
-    Best regards.'
-  requestedMutation: {fileID: 11400000, guid: 1c4085129abc9cb48ad51cbad5250e76, type: 2}
+  customer: Milie
+  description: "BRAVO ozdhouqzhduqz\n\nMtn mutant qui survie \xE0 un Ph plus"
+  requestedMutation: {fileID: 11400000, guid: f26d655e3f531fe40adc8fc6329b14fd, type: 2}

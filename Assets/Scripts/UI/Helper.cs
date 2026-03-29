@@ -10,6 +10,7 @@ namespace UI
 
         private void Awake()
         {
+            Cursor.visible = false;
             foreach (var explainable in explainables)
             {
                 explainable.OnExplainStarted += OnExplain;
@@ -32,6 +33,7 @@ namespace UI
         private void OnExplainEnded(Explanations _)
         {
             boxHelper.Close();
+            Cursor.visible = true;
         }
     }
 }

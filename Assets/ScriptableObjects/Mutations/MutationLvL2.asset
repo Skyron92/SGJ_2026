@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef510c576be64c3f8375393ad2fec565, type: 3}
-  m_Name: FirstMutation
+  m_Name: MutationLvL2
   m_EditorClassIdentifier: Assembly-CSharp::Core.Mutation
   effects:
-  - {fileID: 11400000, guid: 296e712a863e2f545b8ffe7285d9820c, type: 2}
+  - {fileID: 11400000, guid: cf0396bb7c25b4f438fa90b559af02b4, type: 2}

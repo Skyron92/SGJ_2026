@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994ea54fd60f8724eb5b922d57068b19, type: 3}
+  m_Name: Lvl1Quest
+  m_EditorClassIdentifier: Assembly-CSharp::Core.Quest
+  customer: Milie
+  description: "Rebonjour,\r\nPour ta premi\xE8re mission, tu dois identifier le
+    ou les g\xE8nes impliqu\xE9s dans la r\xE9sistance \xE0 la chaleur.\nDe base
+    tes spore r\xE9sistent \xE0 90\xB0, mais ici ton objectif est de cr\xE9er un
+    mutant qui resiste \xE0 des temp\xE9ratures de 100\xB0.\n\nPour cel\xE0, modifie
+    ton mutant en cliquant sur le tube au centre de l'\xE9cran puis sur les g\xE8nes
+    que tu souhaite retirer.\nEnsuite, trouve ton outil bain marie et lance le programme
+    adapt\xE9.\nPour finir, regarde au microscope si tes spores ont surv\xE9cues
+    !\n\nSi oui, clique sur envoyer sur le PC, sinon clique sur la poubelle pour
+    r\xE9cup\xE9rer un nouveau tube.\n\nA toi de jouer, bonne chance\_! Milie\n\nPS
+    : Pour cette mission, un seul g\xE8ne te permettra d'atteindre ton objectif."
+  requestedMutation: {fileID: 11400000, guid: 1c4085129abc9cb48ad51cbad5250e76, type: 2}

@@ -7,7 +7,7 @@ namespace UI
     [CreateAssetMenu(menuName = "Gameplay/Explanation", fileName = "New explanations", order = 0)]
     public class Explanations : ScriptableObject
     {
-        [SerializeField] private string[] content;
+        [SerializeField, TextArea(1,5)] private string[] content;
         private int _index;
         private int Index {
             get => _index;

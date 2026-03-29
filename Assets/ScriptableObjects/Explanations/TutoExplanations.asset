@@ -13,6 +13,26 @@ MonoBehaviour:
   m_Name: TutoExplanations
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explanations
   content:
-  - Hello !
-  - Welcome
-  - Goodbye
+  - "Bonjour, je m\u2019appelle Milie, je suis une apprentie chercheuse et je vais
+    te guider dans Spore Buster. Apr\xE8s ces quelques explications ce sera \xE0
+    toi de jouer, sois patient :)"
+  - "Nous somme dans le laboratoire de microbiologie, ici nous nous int\xE9ressons
+    \xE0 la bact\xE9rie Bacillus cereus que nous appellerons BC."
+  - "BC n\u2019est pas vraiment notre amie, elle nous cause pas mal de soucis\u2026\nElle
+    contamine de nombreuses denr\xE9es alimentaires et elle est aussi capable de
+    produire des toxines pouvant nous rendre malade."
+  - "En condition de stress, notre super BC va \xEAtre capable de produire des spores
+    compos\xE9es de diff\xE9rentes couches impliqu\xE9es dans la r\xE9sistance face
+    aux traitements chimiques et thermiques."
+  - "Malheureusement, il me manque des infos sur l\u2019une de ces couches qui s\u2019appelle
+    l\u2019interspace.\nEn revanche je sais qu\u2019il y des sucres dans cette couche
+    mais j\u2019ignore leur r\xF4le."
+  - "Ta mission est donc de m\u2019aider dans mes recherches pour comprendre le r\xF4le
+    de ces sucres dans les propri\xE9t\xE9s de la spore de notre super BC."
+  - "Pour remplir ta mission, tu vas devoir cr\xE9er des souches mutantes en supprimant
+    des g\xE8nes impliqu\xE9s dans la synth\xE8se des sucres de la spore."
+  - "Apr\xE8s ces instructions je te conseil de commencer par cliquer sur le PC pour
+    voir ta mission, puis sur les tubes pour cr\xE9er ton mutant"
+  - "Test les capacit\xE9s de ton mutant avec les outils \xE0 ta disposition. Le
+    microscope te permettra de voir le r\xE9sultat. "
+  - "Je viens de t'envoyer ta premi\xE8re mission. A toi de jouer maintenant !\n"

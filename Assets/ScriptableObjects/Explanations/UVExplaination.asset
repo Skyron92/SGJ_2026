@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: UVExplaination
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explanations
   content:
-  - "UV-254 nm = dommage sur l\u2019ADN"
+  - "Test la r\xE9sistance de tes spores \xE0 la lumi\xE8re.\nLes UV (254 nm) provoquent
+    des dommages sur l\u2019ADN.\nLumi\xE8re puls\xE9e (entre 220 et 1110 nm) flash
+    rapide de lumi\xE8re blanche enrichie en UV qui va d\xE9structur\xE9 la spore"
