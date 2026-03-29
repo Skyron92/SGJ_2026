@@ -578,6 +578,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   maxTime: 5
+  feedbackNotification: {fileID: 0}
 --- !u!1001 &6246930878119931173
 PrefabInstance:
   m_ObjectHideFlags: 0
