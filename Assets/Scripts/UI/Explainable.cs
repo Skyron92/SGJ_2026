@@ -1,28 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace UI
 {
-    public delegate void ExplanationsHandler(Explanations explanations);
-    
-    public interface IExplainable
+    public class Explainable : PointerSensitive
     {
-        public event ExplanationsHandler OnExplainStarted;
-        public event ExplanationsHandler OnExplainEnded;
-        
-    }
-    public class Explainable : PointerSensitive, IExplainable
-    {
-        public event ExplanationsHandler OnExplainStarted, OnExplainEnded;
+        public UnityEvent<Explanations> onExplainStarted, onExplainEnded;
         [SerializeField] private Explanations explanations;
         [SerializeField] private bool explainOnStart;
         
         private void Start() {
             explanations.Reset();
+            explanations.onEnded += (e, a) => FinishExplanations();
             if(!explainOnStart) return;
             TriggerExplanations();
         }
 
-        public void TriggerExplanations() => OnExplainStarted?.Invoke(explanations);
-        public void FinishExplanations() => OnExplainEnded?.Invoke(explanations);
+        public void TriggerExplanations() => onExplainStarted?.Invoke(explanations);
+        public void FinishExplanations() => onExplainEnded?.Invoke(explanations);
     }
 }

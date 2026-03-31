@@ -8,13 +8,11 @@ namespace UI
         [SerializeField] Explainable[] explainables;
         [SerializeField] BoxHelper boxHelper;
 
-        private void Awake()
-        {
-            Cursor.visible = false;
+        private void Awake() {
             foreach (var explainable in explainables)
             {
-                explainable.OnExplainStarted += OnExplain;
-                explainable.OnExplainEnded += OnExplainEnded;
+                explainable.onExplainStarted.AddListener(OnExplain);
+                explainable.onExplainEnded.AddListener(OnExplainEnded);
             }
         }
 
@@ -30,10 +28,8 @@ namespace UI
                 else boxHelper.Close();
             };
         }
-        private void OnExplainEnded(Explanations _)
-        {
+        private void OnExplainEnded(Explanations _) {
             boxHelper.Close();
-            Cursor.visible = true;
         }
     }
 }

@@ -8,6 +8,7 @@ namespace UI
     public class Explanations : ScriptableObject
     {
         [SerializeField, TextArea(1,5)] private string[] content;
+        public event EventHandler onEnded;
         private int _index;
         private int Index {
             get => _index;
@@ -27,6 +28,7 @@ namespace UI
             catch (IndexOutOfRangeException e)
             {
                 Reset();
+                onEnded?.Invoke(this, EventArgs.Empty);
                 return null;
             }
             

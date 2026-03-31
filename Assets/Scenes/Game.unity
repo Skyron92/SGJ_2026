@@ -1077,6 +1077,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
+  onExplainStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onExplainEnded:
+    m_PersistentCalls:
+      m_Calls: []
   explanations: {fileID: 11400000, guid: 7bb60955c125799409f6cf78834d4119, type: 2}
   explainOnStart: 0
 --- !u!1001 &269233014
@@ -1733,6 +1739,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
+  onExplainStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onExplainEnded:
+    m_PersistentCalls:
+      m_Calls: []
   explanations: {fileID: 11400000, guid: 37a899b12240c704f903cca9b837fda2, type: 2}
   explainOnStart: 0
 --- !u!1 &538489054
@@ -2657,6 +2669,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
+  onExplainStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onExplainEnded:
+    m_PersistentCalls:
+      m_Calls: []
   explanations: {fileID: 11400000, guid: 30cc61de8008a534bbb1479514375e99, type: 2}
   explainOnStart: 0
 --- !u!114 &1300361051 stripped
@@ -2729,6 +2747,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
+  onExplainStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onExplainEnded:
+    m_PersistentCalls:
+      m_Calls: []
   explanations: {fileID: 11400000, guid: 2c1d95a7d64eb0144bad8588d5efbce3, type: 2}
   explainOnStart: 0
 --- !u!114 &1399282401 stripped
@@ -2801,6 +2825,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
+  onExplainStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onExplainEnded:
+    m_PersistentCalls:
+      m_Calls: []
   explanations: {fileID: 11400000, guid: db8ecd3db5bc9e041953d8668fade157, type: 2}
   explainOnStart: 0
 --- !u!114 &1501549019 stripped
@@ -3235,6 +3265,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
+  onExplainStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onExplainEnded:
+    m_PersistentCalls:
+      m_Calls: []
   explanations: {fileID: 11400000, guid: 2bfbea1c3ae0cec4c8e28240a35a997e, type: 2}
   explainOnStart: 0
 --- !u!1001 &1643809520
@@ -3694,6 +3730,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
+  onExplainStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onExplainEnded:
+    m_PersistentCalls:
+      m_Calls: []
   explanations: {fileID: 11400000, guid: ecb7fbf80bfd9774092c466a10e20b3a, type: 2}
   explainOnStart: 0
 --- !u!1001 &1674847641
@@ -3938,6 +3980,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
+  onExplainStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onExplainEnded:
+    m_PersistentCalls:
+      m_Calls: []
   explanations: {fileID: 11400000, guid: 2c1d95a7d64eb0144bad8588d5efbce3, type: 2}
   explainOnStart: 0
 --- !u!114 &1768823833 stripped
@@ -4222,6 +4270,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
+  onExplainStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onExplainEnded:
+    m_PersistentCalls:
+      m_Calls: []
   explanations: {fileID: 11400000, guid: 8653aa21ad40eba4f94fa802bf71b3f9, type: 2}
   explainOnStart: 0
 --- !u!1001 &1917802722
@@ -4771,6 +4825,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explainable
   inputActionReference: {fileID: -6489860845471655550, guid: ae5c07b3bb760584a8e51d5fa4569341, type: 3}
+  onExplainStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onExplainEnded:
+    m_PersistentCalls:
+      m_Calls: []
   explanations: {fileID: 11400000, guid: 7eee1334dbe5b074584ee67aee8606c7, type: 2}
   explainOnStart: 0
 --- !u!114 &2014920997 stripped
@@ -4807,6 +4867,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainEnded.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainStarted.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 386995903}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 386995903}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainEnded.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainEnded.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainStarted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainStarted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainEnded.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainStarted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200328015731069569, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
+      propertyPath: onExplainStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1311756268372032857, guid: 65e02dd8b87c1664cb1dec0e08119353, type: 3}
       propertyPath: m_Name
       value: TutoManager
