@@ -15,4 +15,7 @@ public class ProgressHandler : MonoBehaviour
         int index = Load() == 0 ? 0 : Load() - 1;
         return quests[index];
     }
+    
+    [ContextMenu("Reset save")]
+    public void ResetSave() => Save(0);
 }
