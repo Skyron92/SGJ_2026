@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HeaterExplaination
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explanations
   content:
-  - "Tu va pouvoir soumettre les spores \xE0 de fortes chaleurs \xE0 l\u2019aide
+  - "Tu vas pouvoir soumettre les spores \xE0 de fortes chaleurs \xE0 l\u2019aide
     de cet outil, plonge tes tubes dedans pour d\xE9buter le test"

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BinExplaination
   m_EditorClassIdentifier: Assembly-CSharp::UI.Explanations
   content:
-  - "El\xE9ment indispensable pour traiter nos d\xE9chets biologiques (spore, bact\xE9ries,
-    \u2026). Ces d\xE9chets seront autoclav\xE9 afin de les d\xE9truire pour ne pas
-    rejeter dans la nature des microorganismes parfois pathog\xE8ne ou modifi\xE9
-    g\xE9n\xE9tique (OGM)"
+  - "El\xE9ment indispensable pour traiter nos d\xE9chets biologiques (spores, bact\xE9ries,
+    \u2026). Ces d\xE9chets seront autoclav\xE9s afin de les d\xE9truire pour ne
+    pas rejeter dans la nature des microorganismes parfois pathog\xE8nes ou modifi\xE9s
+    g\xE9n\xE9tiquement (OGM)"

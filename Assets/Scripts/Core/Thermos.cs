@@ -53,7 +53,7 @@ public class Thermos : MonoBehaviour
         feedbackNotification.gameObject.SetActive(true);
         var success = MutationHandler.Instance.SupportWarm(temp);
         if(!success) MutationHandler.Instance.KillMutation();
-        feedbackNotification.Init(success, success ? "Votre mutation a survécu au programme !" : "Votre mutation n'a pas survécu au programme...");
+        feedbackNotification.Init(success, success ? "Votre mutant a survécu au programme !" : "Votre mutant n'a pas survécu au programme...");
         onTimerEnded?.Invoke(temp);
     }
 

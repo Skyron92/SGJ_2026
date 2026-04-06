@@ -15,12 +15,12 @@ MonoBehaviour:
   customer: Milie
   description: "Rebonjour,\r\nPour ta premi\xE8re mission, tu dois identifier le
     ou les g\xE8nes impliqu\xE9s dans la r\xE9sistance \xE0 la chaleur.\nDe base
-    tes spore r\xE9sistent \xE0 90\xB0, mais ici ton objectif est de cr\xE9er un
-    mutant qui r\xE9siste \xE0 des temp\xE9ratures de 100\xB0.\n\nPour cela, modifie
+    les spores r\xE9sistent \xE0 90\xB0C, mais ici ton objectif est de cr\xE9er un
+    mutant qui r\xE9siste \xE0 des temp\xE9ratures de 100\xB0C.\n\nPour cela, modifie
     ton mutant en cliquant sur le tube au centre de l'\xE9cran puis sur les g\xE8nes
-    que tu souhaites retirer.\nEnsuite, trouve ton outil bain marie et lance le programme
+    que tu souhaites retirer.\nEnsuite, trouve ton outil bain-marie et lance le programme
     adapt\xE9.\nPour finir, regarde au microscope si les spores ont surv\xE9cu !\n\nSi
-    oui, clique sur envoyer sur le PC, sinon clique sur la poubelle pour r\xE9cup\xE9rer
-    un nouveau tube.\n\nA toi de jouer, bonne chance\_! Milie\n\nPS : Pour cette
-    mission, un seul g\xE8ne te permettra d'atteindre ton objectif."
+    oui, cliquer sur envoyer , sinon clique sur la poubelle pour recommencer.\n\nA
+    toi de jouer, bonne chance\_! Milie\n\nPS : Pour cette mission, un seul g\xE8ne
+    te permettra d'atteindre ton objectif."
   requestedMutation: {fileID: 11400000, guid: 1c4085129abc9cb48ad51cbad5250e76, type: 2}
